@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 
 function App() {
   const [inputValue, setInputValue] = useState('')
@@ -9,11 +9,11 @@ function App() {
     id: number
     inputValue: string
     checked: boolean
-  }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value)
-  }
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
